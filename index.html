@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<title>-- Speed Typer --</title>
+</head>
+<body class="bg-dark text-white">
+	<header class="bg-secondary text-center p-3 mb-5">
+		<h1>SpeedTyper</h1>
+	</header>
+	<div class="container text-center">
+		<!-- Word and Input -->
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<p class="lead">Choose Dificulty : 
+					<select id="dificulty">
+						<option value="1">Hard</option>
+						<option value="2" selected="selected" ="2">Medium</option>
+						<option value="3">Easy</option>
+					</select></p>
+				<p class="lead">Type the given word within the <span class="text-success" id="seconds">5</span> seconds</p>
+				<h2 class="display-2 mb-5" id="current-word">hello</h2>
+				<input type="text" class="form-control form-control-lg" name="word-input" placeholder="start typing..." id="word-input" autofocus> 
+				<h4 class="mt-3" id="message"></h4>
+
+				<div class="row mt-5">
+					<div class="col-md-6">
+						<h3>time left :
+							<span id="time">0</span>
+						</h3>
+					</div>
+					<div class="col-md-6">
+						<h3>score :
+							<span id="score">0</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
